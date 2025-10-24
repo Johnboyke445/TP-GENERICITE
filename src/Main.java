@@ -40,11 +40,11 @@ public class Main {
         Livre livre5 = new Livre("La Peste", 1947, "Albert Camus", 295);
 
 
-        CD cd1 = new CD("Thriller", 1982, "Michael Jackson", "42min");
-        CD cd2 = new CD("Back in Black", 2021, "AC/DC", "41min");
-        CD cd3 = new CD("Random Access Memories", 2013, "Daft Punk", "74min");
-        CD cd4 = new CD("Divide", 2017, "Ed Sheeran", "59min");
-        CD cd5 = new CD("Abbey Road", 1969, "The Beatles", "47min");
+        CD cd1 = new CD("Thriller", 1982, "Michael Jackson", 42);
+        CD cd2 = new CD("Back in Black", 2021, "AC/DC", 41);
+        CD cd3 = new CD("Random Access Memories", 2013, "Daft Punk", 74);
+        CD cd4 = new CD("Divide", 2017, "Ed Sheeran", 59);
+        CD cd5 = new CD("Abbey Road", 1969, "The Beatles", 47);
 
         mediasDisponibles.add(livre1);
         mediasDisponibles.add(livre2);
@@ -155,6 +155,7 @@ public class Main {
         afficherListe(livre);
 
         System.out.println("-------------------------------------------------------------");
+
         System.out.println("--Testez le polymorphisme en appelant afficherDetails() sur une liste de Media.--");
         for (Media m : mediasDisponibles) {
             m.afficherDetails(); // Affiche la description correcte selon le type

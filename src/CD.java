@@ -1,9 +1,9 @@
 public class CD extends Media implements Empruntable{
 
     private String artiste;
-    private String duree;
+    private int duree;
 
-    public CD (String titre, int anneePublication, String artiste, String duree) {
+    public CD (String titre, int anneePublication, String artiste, int duree) {
         super (titre, anneePublication);
         this.artiste = artiste;
         this.duree = duree;
@@ -12,19 +12,21 @@ public class CD extends Media implements Empruntable{
     public String getArtiste() {
         return artiste;
     }
+
     public void setArtiste(String artiste) {
         this.artiste = artiste;
     }
 
-    public String getDuree() {
+    public int getDuree() {
         return duree;
     }
-    public void setDuree(String duree) {
+
+    public void setDuree( int duree) {
         this.duree = duree;
     }
 
     public String getDescription() {
-        return "CD de "+ artiste + "durée : " + duree;
+        return "CD de "+ artiste + "durée : " + duree + "min";
     }
 
     @Override
