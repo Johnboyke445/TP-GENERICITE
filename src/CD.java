@@ -26,7 +26,7 @@ public class CD extends Media implements Empruntable{
     }
 
     public String getDescription() {
-        return "CD de "+ artiste + "durée : " + duree + "min";
+        return "CD de "+ getArtiste() + "durée : " + getDuree() + "min";
     }
 
     @Override

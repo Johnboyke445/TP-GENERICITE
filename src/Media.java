@@ -27,7 +27,7 @@ public abstract class Media {
 
     @Override
     public String toString() {
-        return titre + " (" + anneePublication + ")";
+        return getTitre() + " (" + getAnneePublication() + ")";
     }
 
 

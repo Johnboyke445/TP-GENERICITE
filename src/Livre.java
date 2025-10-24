@@ -28,7 +28,8 @@ public class Livre extends Media implements Empruntable {
     }
 
     public String getDescription() {
-   return "livre de "+ auteur + "Nombres de pages : " + nbPages;
+
+        return "livre de "+ getAuteur() + "Nombres de pages : " + getNbPages();
     }
 
     @Override

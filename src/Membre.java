@@ -36,6 +36,6 @@ public class Membre {
 
     @Override
     public String toString() {
-        return "Membre {" + nom + ", " + id + "}";
+        return "Membre {" + getNom() + ", " + getId() + "}";
     }
 }
