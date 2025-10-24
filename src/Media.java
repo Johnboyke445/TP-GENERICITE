@@ -3,7 +3,8 @@ public abstract class Media {
     private  String titre;
     private int anneePublication;
 
-    public Media() {this ( "inconnu", 0);}
+    public Media() {
+    }
 
     public Media(String titre, int anneePublication) {
         this.titre = titre;
